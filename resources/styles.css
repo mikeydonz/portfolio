@@ -15,15 +15,8 @@
     height: 2000px;
 }
 
-header {
-    grid-column-start: 3;
-    grid-column-end: 18;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    display: block;
-}
-
 #logo {
+    background: white;
     color: black;
     font-family: 'Staatliches', cursive;
     font-weight: bold;
@@ -35,17 +28,12 @@ header {
 }
 
 #logo a {
-    /* border-radius: 5px; */
+    border-radius: 5px;
     border: 3px solid black;
     text-decoration: none;
     padding-left: 6px;
     padding-right: 6px;
     padding-top: 1px;
-}
-
-#logo a:hover {
-    /* background:rgb(8, 134, 212); */
-    box-shadow: -1px 1px 1px black;
 }
 
 #buttons {
@@ -61,7 +49,7 @@ header {
 }
 
 #buttons a {
-    font-size: 15px;
+    font-size: auto;
     text-decoration: none;
 }
 
@@ -72,12 +60,16 @@ header {
 
 #intro {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 5%;
+    padding-top: 40px;
     display: block;
     grid-column-start: 1;
     grid-column-end: 21;
     grid-row-start: 2;
     grid-row-end: 7;
+}
+
+#intro h1 {
+    font-size: 2.5em;
 }
 
 #intro h4 {
@@ -96,12 +88,14 @@ header {
     grid-column-end: 21;
     grid-row-start: 8;
     grid-row-end: 9;
-    display: inline-flex
+    display: inline-flex;
 }
 
 #pics img {
-    height: 175px;
-    width: 175px;
+    max-height: 175px;
+    max-height: 175px;
+    min-height: 50px;
+    min-width:50px;
 }
 
 #aboutme {
@@ -110,12 +104,13 @@ header {
     grid-column-start: 1;
     grid-column-end: 21;
     grid-row-start: 9;
-    grid-row-end: 13;
+    grid-row-end: 12;
 
 }
 
 #aboutme h3 {
-    padding-top: 5%;
+    font-size: 1.5em;
+    padding-top: 2.5%;
     color:white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -131,39 +126,51 @@ header {
 }
 
 #skills {
-    display: inline-block;
     grid-column-start: 1;
     grid-column-end: 21;
-    grid-row-start: 13;
+    grid-row-start: 12;
     grid-row-end: 19;
 }
 
+
 #container1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    float:left;
-    padding-left: 5%;
+    padding-left: 0%;
     grid-column-start: 2 !important;
-    grid-column-end: 3 !important;
+    grid-column-end: 4 !important;
     height: 500px;
 }
 
 #container2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    float: right;
-    padding-right: 5%;
-    grid-column-start: 4 !important;
-    grid-column-end: 5 !important;
+    padding-right: 0%;
+    grid-column-start: 5!important;
+    grid-column-end: 7 !important;
     height: 500px;
+}
+
+#container3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 0%;
+    grid-column-start: 3!important;
+    grid-column-end: 4 !important;
+    height: 500px;
+    display: none;
 }
 
 #skills {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 0%;
     display: grid !important;
-    grid-template-columns: repeat(5, 1fr) !important;
+    grid-template-columns: repeat(7, 1fr) !important;
+}
+
+#skills h1 {
+    font-size: 2.5em;
 }
 
 #skills h3 {
+    font-size:1.5em;
     text-align: center;
 }
 
@@ -176,24 +183,19 @@ header {
     background: black;
     grid-column-start: 1;
     grid-column-end: 21;
-    grid-row-start: 19;
+    grid-row-start: 20;
     grid-row-end: 21;
     display: block; 
 }
 
 #contactme h3, #contactme a {
-    padding-top: 2.5%;
+    padding-top: 2%;
     color: white !important;
 }
 
-#contactme a {
-    display: inline-flex;
-    justify-content:space-around;
-    text-decoration: none;
-}
-
-#contactme a:hover {
-    color:rgb(8, 134, 212) !important;
+#contactme p {
+    color: white !important;
+    padding-bottom: 3%;
 }
 
 .items {
@@ -201,4 +203,8 @@ header {
     border-radius: 10px;
     align-items: center;
     justify-content: center;
+}
+
+#contactme h3 {
+    font-size: 1.5em;
 }
