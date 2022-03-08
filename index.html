@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="resources/images/favicon.ico" type="image/any-icon">
     <link rel="stylesheet" type="text/css" href="resources/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,28 +19,28 @@
 
     <div class="wrapper">
 
-        <div id="logo" class="items">
-            <a href="#">NE</a>
+        <div id="logo" class="items top">
+            <a onclick="randomize()" id="color1" href="#">NE</a>
         </div>
 
-        <div id="buttons" class="items">
-            <a href="#">about me</a>
-            <a href="#">skills</a>
+        <div id="buttons" class="items top">
+            <a href="#aboutme">about me</a>
+            <a href="#skills">skills</a>
             <a href="#contactme">say hello</a>
         </div>
 
         <nav class="items" id="intro">
             <h1>Student & Soon To Be Software Engineer</h1>
             <h4>Currently a student at Oregon State University, I enjoy creating beautiful code and bringing ideas to life through design.</h4>
-            <img src="resources/images/avatar1.jpg" id="avatar">
+            <img src="resources/images/avatar.jpg" id="avatar">
         </nav>
 
         <div class="items" id="pics">
             <img src="resources/images/programming.jpg">
-            <img src="resources/images/webdesign.jpg">
-            <img src="resources/images/code.jpg">
             <img src="resources/images/algo.jpg">
+            <img src="resources/images/code.jpg">
             <img src="resources/images/structure.jpg">
+            <img src="resources/images/webdesign.jpg">
         </div>
 
         <div class="items contents" id="aboutme">
@@ -51,53 +52,60 @@
             <div id="container1">
             <div id="frontend">
                 <h1>Front-end</h1>
+                <br>
                 <h3>Languages I Speak</h3>
-                <ul>
                     <p>HTML</p>
                     <p>CSS</p>
                     <p>JavaScript</p>
-                </ul>
+                    <br>
+                    <br>
+                    <br>
                 <h3>Dev Tools</h3>
-                <ul>
                     <p>React.js</p>
                     <p>Bootstrap</p>
                     <p>GitHub</p>
                     <p>jQuery</p>
-                </ul>
             </div>
             </div>
             <div id="container2">
             <div id="backend">
                 <h1>Back-end</h1>
+                <br>
                 <h3>Languages I speak</h3>
-                <ul>
                     <p>Python</p>
                     <p>Java</p>
                     <p>JavaScript</p>
                     <p>SQL</p>
-                </ul>
+                    <br>
                 <h3>Dev Tools</h3>
-                <ul>
                     <p>PostgreSQL</p>
                     <p>Express</p>
                     <p>Node.js</p>
                     <p>GitBash</p>
                     <p>Visual Studio Code</p>
-                </ul>
+            </div>
+            <div id="container3">
+                <div id="knowledge">
+                    <h1>Know-How</h1>
+                    <br>
+                    <h3>Know-How</h3>
+                    <p>Debugging</p>
+                    
+                </div>
             </div>
             </div>
         </aside>
 
         <footer class="items" id="contactme">
-            <h3>Say Hello!</h3>
+            <h3>Let's chat!</h3>
             <div id="links">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Email</a>
+                <p>Email: noahie@mail.usf.edu</p>
             </div>
         </footer>
 
     </div>
-    
+    <script src="resources/script.js"> 
+      
+    </script>
 </body>
 </html>
