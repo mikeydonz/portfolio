@@ -51,6 +51,7 @@
 #buttons a {
     font-size: auto;
     text-decoration: none;
+    
 }
 
 #buttons a:hover {
@@ -136,16 +137,16 @@
 #container1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 0%;
-    grid-column-start: 2 !important;
-    grid-column-end: 4 !important;
+    grid-column-start: 1 !important;
+    grid-column-end: 2 !important;
     height: 500px;
 }
 
 #container2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-right: 0%;
-    grid-column-start: 5!important;
-    grid-column-end: 7 !important;
+    grid-column-start: 2 !important;
+    grid-column-end: 3 !important;
     height: 500px;
 }
 
@@ -155,14 +156,14 @@
     grid-column-start: 3!important;
     grid-column-end: 4 !important;
     height: 500px;
-    display: none;
+    
 }
 
 #skills {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 0%;
     display: grid !important;
-    grid-template-columns: repeat(7, 1fr) !important;
+    grid-template-columns: repeat(3, 1fr) !important;
 }
 
 #skills h1 {
