@@ -10,7 +10,7 @@
 .wrapper {
     display: grid;
     grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: repeat(20, 1fr);
+    grid-template-rows: repeat(24, 1fr);
     grid-gap: 2px;
     height: 2000px;
 }
@@ -39,7 +39,7 @@
 #buttons {
     padding-right: 10%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    grid-column-start: 17;
+    grid-column-start: 16;
     grid-column-end: 21;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -87,8 +87,8 @@
 #pics {
     grid-column-start: 1;
     grid-column-end: 21;
-    grid-row-start: 8;
-    grid-row-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 11;
     display: inline-flex;
 }
 
@@ -104,8 +104,8 @@
     background: black;
     grid-column-start: 1;
     grid-column-end: 21;
-    grid-row-start: 9;
-    grid-row-end: 12;
+    grid-row-start: 11;
+    grid-row-end: 14;
 
 }
 
@@ -129,8 +129,12 @@
 #skills {
     grid-column-start: 1;
     grid-column-end: 21;
-    grid-row-start: 12;
+    grid-row-start: 14;
     grid-row-end: 19;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 0%;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
 }
 
 
@@ -159,13 +163,6 @@
     
 }
 
-#skills {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 0%;
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-}
-
 #skills h1 {
     font-size: 2.5em;
 }
@@ -179,16 +176,55 @@
     font-weight: 400px;
 }
 
+#projects {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid-column-start: 1;
+    grid-column-end: 21;
+    grid-row-start: 21;
+    grid-row-end: 23;
+    display: grid !important;
+    grid-template-rows: 1fr 2fr !important;
+    
+}
+
+#projects-head {
+    grid-row-start: 1 !important;
+    grid-row-end: 2 !important;
+    
+}
+
+#projects-content {
+    grid-row-start:2 !important;
+    grid-row-end: 3 !important;
+    grid-column-start: 1;
+    grid-column-end: 20;
+    display: inline-flex;
+    padding-top: 10%;
+    font-size: 0.9em;
+
+}
+
+#projects-content img {
+    max-width: 75px;
+    max-height: 75px;
+    min-height: 50px;
+    min-width:50px;
+    border-radius: 20%;
+}
+
+#projects-content img:hover {
+    box-shadow: -2px 2px 3px black;  
+}
+
 #contactme {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: black;
     grid-column-start: 1;
     grid-column-end: 21;
-    grid-row-start: 20;
-    grid-row-end: 21;
+    grid-row-start: 24;
+    grid-row-end: 25;
     display: block; 
 }
-
 #contactme h3, #contactme a {
     padding-top: 2%;
     color: white !important;
