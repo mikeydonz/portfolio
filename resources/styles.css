@@ -201,6 +201,10 @@
     /* border: 1px solid black; */
 }
 
+#projects-head h1 {
+    font-size: 2.5em;
+}
+
 #projects-content {
     grid-row-start:2 !important;
     grid-row-end: 3 !important;
