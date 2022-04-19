@@ -10,9 +10,9 @@
 .wrapper {
     display: grid;
     grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: repeat(24, 1fr);
+    grid-template-rows: repeat(26, 1fr);
     grid-gap: 2px;
-    height: 2000px;
+    height: 2200px;
 }
 
 #logo {
@@ -88,7 +88,7 @@
     grid-column-start: 1;
     grid-column-end: 21;
     grid-row-start: 9;
-    grid-row-end: 11;
+    grid-row-end: 13;
     display: inline-flex;
 }
 
@@ -104,9 +104,8 @@
     background: black;
     grid-column-start: 1;
     grid-column-end: 21;
-    grid-row-start: 11;
-    grid-row-end: 14;
-
+    grid-row-start: 12;
+    grid-row-end: 15;
 }
 
 #aboutme h3 {
@@ -129,12 +128,13 @@
 #skills {
     grid-column-start: 1;
     grid-column-end: 21;
-    grid-row-start: 14;
-    grid-row-end: 19;
+    grid-row-start: 15;
+    grid-row-end: 20;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 0%;
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
+    /* border: 1px solid black */
 }
 
 
@@ -144,6 +144,7 @@
     grid-column-start: 1 !important;
     grid-column-end: 2 !important;
     height: 500px;
+    /* border: 1px solid black */
 }
 
 #container2 {
@@ -152,6 +153,7 @@
     grid-column-start: 2 !important;
     grid-column-end: 3 !important;
     height: 500px;
+    /* border: 1px solid black */
 }
 
 #container3 {
@@ -160,6 +162,7 @@
     grid-column-start: 3!important;
     grid-column-end: 4 !important;
     height: 500px;
+    /* border: 1px solid black */
     
 }
 
@@ -180,27 +183,35 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     grid-column-start: 1;
     grid-column-end: 21;
-    grid-row-start: 21;
-    grid-row-end: 23;
+    grid-row-start: 22;
+    grid-row-end: 26;
     display: grid !important;
     grid-template-rows: 1fr 2fr !important;
-    
+    grid-template-columns: repeat(5, 1fr) !important;
+    /* border: 1px solid black; */
 }
 
 #projects-head {
     grid-row-start: 1 !important;
     grid-row-end: 2 !important;
-    
+    grid-column-start: 3 !important;
+    grid-column-end: 4 !important;
+    padding-top: 0%;
+    padding-bottom: 10%;
+    /* border: 1px solid black; */
 }
 
 #projects-content {
     grid-row-start:2 !important;
     grid-row-end: 3 !important;
     grid-column-start: 1;
-    grid-column-end: 20;
+    grid-column-end: 21;
     display: inline-flex;
-    padding-top: 10%;
+    padding-top: 0%;
     font-size: 0.9em;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(5, 1fr) !important;
+    /* border: 1px solid black; */
 
 }
 
@@ -208,7 +219,7 @@
     max-width: 75px;
     max-height: 75px;
     min-height: 50px;
-    min-width:50px;
+    min-width: 50px;
     border-radius: 20%;
 }
 
@@ -216,13 +227,31 @@
     box-shadow: -2px 2px 3px black;  
 }
 
+#projects-content figcaption p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    padding-bottom: 15%;
+    font-weight: 400px;
+}
+
+.projects {
+    display: block !important;
+    max-width: 20%;
+}
+
+/* #jammming { 
+    grid-column-start:3 !important;
+    grid-column-end: 4 !important;
+    display: block !important;
+} */
+
 #contactme {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: black;
     grid-column-start: 1;
     grid-column-end: 21;
-    grid-row-start: 24;
-    grid-row-end: 25;
+    grid-row-start: 26;
+    grid-row-end: 27;
     display: block; 
 }
 #contactme h3, #contactme a {
