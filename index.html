@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 
@@ -23,11 +23,28 @@
             <a onclick="randomize()" id="color1" href="#">NE</a>
         </div>
 
-        <div id="buttons" class="items top">
-            <a href="#aboutme">about me</a>
-            <a href="#skills">skills</a>
-            <a href="#projects">projects</a> 
-            <a href="#contactme">say hello</a>
+        <div class="items top" id="buttons">
+            <div class="secondset">
+                <div class="topnav">
+                    <a href="#aboutme">about me</a>
+                    <a href="#skills">skills</a>
+                    <a href="#projects">projects</a>
+                    <a href="#contactme">say hello</a>
+                    <a class="nav icon" onclick="myFunction()">
+                        <div href="#" class="one"></div>
+                        <div href="#" class="two"></div>
+                        <div href="#" class="three"></div>
+                    </a>
+                </div>
+                <div class="dropdown">
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#aboutme">about me</a>
+                        <a href="#skills">skills</a>
+                        <a href="#projects">projects</a>
+                        <a href="#contactme">say hello</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <nav class="items" id="intro">
@@ -110,7 +127,7 @@
             </div>
             <div id="projects-content">
                 <div class="projects" id="jammming">
-                    <a href="http://skinny-wood.surge.sh/" target="_blank">
+                    <a href="http://festive-clouds.surge.sh/" target="_blank">
                         <img src="./resources/images/Jammming Pic.png" id="project-pics" 
                         title="Jammming App">
                     </a>
@@ -126,6 +143,8 @@
             <h3>Let's chat!</h3>
             <div id="links">
                 <p>Email: noahie@mail.usf.edu</p>
+                <br>
+                <a href="https://github.com/mikeydonz" target="_blank">GitHub</a>
             </div>
         </footer>
 
